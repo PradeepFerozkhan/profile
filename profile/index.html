@@ -1,156 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profile Page</title>
-  <style>
-    /* Basic Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f5f5f5;
-      color: #333;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .profile-card {
-      background: #fff;
-      border-radius: 12px;
-      width: 300px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      transition: transform 0.3s ease;
-    }
-
-    .profile-card:hover {
-      transform: translateY(-10px);
-    }
-
-    .profile-header {
-      background: #6c63ff;
-      padding: 30px 20px;
-      text-align: center;
-      color: #fff;
-    }
-
-    .profile-header img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      border: 4px solid #fff;
-      margin-bottom: 15px;
-    }
-
-    .profile-header h2 {
-      font-size: 22px;
-      margin-bottom: 5px;
-    }
-
-    .profile-header p {
-      font-size: 14px;
-      margin-bottom: 15px;
-    }
-
-    .profile-details {
-      padding: 20px;
-      text-align: center;
-    }
-
-    .profile-details h3 {
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
-
-    .profile-details p {
-      font-size: 16px;
-      margin-bottom: 10px;
-      color: #666;
-    }
-
-    .social-links {
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-    }
-
-    .social-links a {
-      text-decoration: none;
-      color: #333;
-      margin: 0 10px;
-      font-size: 20px;
-      transition: color 0.3s ease;
-    }
-
-    .social-links a:hover {
-      color: #6c63ff;
-    }
-
-    .social-links a i {
-      transition: transform 0.3s ease;
-    }
-
-    .social-links a:hover i {
-      transform: translateY(-3px);
-    }
-
-    .footer {
-      padding: 10px;
-      text-align: center;
-      background: #f4f4f4;
-      border-top: 1px solid #e5e5e5;
-      font-size: 14px;
-      color: #888;
-    }
-
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PradeepKhan-Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
+
+<style>
+    body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.profile-container {
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+    background: wheat;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.profile-header {
+    background: linear-gradient(45deg, #007bff, #00c6ff);
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+}
+
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 6px solid white;
+}
+
+.name{
+    color: black;
+    font-size: 40px;
+    font-family:"Roboto", sans-serif;
+    text-shadow: 3px 2px white;
+}
+
+.job{
+    color: darkblue;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "poppins", sans-serif;
+    text-shadow: -2px -2px white;
+}
+
+.profile-content {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 25px;
+}
+
+section h2 {
+    border-bottom: 3px solid darkblue;
+    padding-bottom: 2px;
+    margin-bottom: 15px;
+}
+
+.bio p, .contact-info p {
+    margin: 5px 0;
+    color: black;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    display: inline-block;
+    background: blue;
+    color: white;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 30px;
+}
+
+.subt{
+    color: darkblue;
+}
+
+</style>
+
 <body>
-  <div class="profile-card">
-    <!-- Profile Header -->
-    <div class="profile-header">
-      <img src="https://via.placeholder.com/120" alt="Profile Picture">
-      <h2>John Doe</h2>
-      <p>Web Developer | Designer</p>
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src=".\\pradeep.jpg" alt="Profile Picture" class="profile-picture">
+            <h1 class="name">PRADEEP KHAN S</h1>
+            <p class="job">WEB DEVELOPER</p>
+        </div>
+        <div class="profile-content">
+            <section class="bio">
+                <h2 class="subt">About Me</h2>
+                <p><b>As a Dedicated and innovative Web Developer with a strong focus on Web Design and Frontend Development, I bring a wealth of experience in creating visually appealing and highly functional websites. My expertise spans HTML, CSS, JavaScript, and Various Frontend Frameworks,enabling me to build responsive and user-friendly interfaces. With a keen eye for design and a passion for creating seamless user experiences, I excel in Translating complex requirements into elegant and efficient solutions. Additionally, I am proficient in Microsoft Office, leveraging its tools to enhance projectmanagement and documentation.My Commitmentto staying updated with the latest industry trends ensures that I deliver cutting-edge solutions that meet and exceed client expectations.</b></p>
+            </section>
+            <section class="contact-info">
+                <h2 class="subt">Contact Information</h2>
+                <p><strong>Email:</strong><b><i>spradeepferozkhan@gmail.com</i></p>
+                <p><strong>Phone:</strong><i> +91 8015121994</i></p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pradeep-khan-s-91371b32b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i>linkedin.com/in/Pradeep_Khan_S</i></b></a></p>
+            </section>
+            <section class="skills">
+                <h2 class="subt">My SKILLS</h2>
+                <ul>
+                    <li><b>FRONT-END DEVELOPMENT</b></li>
+                    <li><b>WEB DESIGNING</b></li>
+                    <li><b>MS OFFICE</b></li>
+                </ul>
+            </section>
+            <section class="lang">
+                <h2 class="subt">Languages</h2>
+                <ul>
+                    <li><b>Tamil</li>
+                    <progress id="prgstam" value="100" max="100">Tamil</progress>
+                    <li>English</li>
+                    <progress id="prgseng" value="70" max="100">Tamil</b></progress>
+                </ul>
+            </section>
+            <section class="skills">
+                <h2 class="subt">Education</h2>
+                <ul>
+                    <li><b>Completed SSLC</b></li>
+                    <progress id="prgssslc" value="64" max="100">SSLC</progress>
+                    <li><b>Completed HSC</b></li>
+                    <progress id="prgshsc" value="61" max="100">HSC</progress>
+                    <li><b>InProgress B.Sc.,Computer Science</b></li>
+                    <progress id="prgsbsc" value="82" max="100">B.SC.,CS</progress>
+                </ul>
+            </section>
+            <section>
+                <h2 class="subt">PROJECTS</h2>
+                <p><strong>Projects</strong> <a href="https://drive.google.com/drive/folders/1Cc7L1DgGf0-Byljuo3mkayyKGoQm06e_?usp=drive_link"><b><i>GoogleDrive/Projects</i></a></p>
+            </section>
+            <section>
+                <h2 class="subt">Interests & Hobbies</h2>
+                <ul>
+                    <li><b><i>Reading Books</b></li>
+                    <li><b><i>Web Designings</b></li>
+                    <li><b><i>Coding/Programming</b></li>
+                    <li><b><i>Listening Musics</b></li>
+                    <li><b><i>Cycling</b></li>
+                    <li><b><i>Playing Games</b></li>
+                </ul>
+            </section>
+        </div>
     </div>
-
-    <!-- Profile Details -->
-    <div class="profile-details">
-      <h3>About Me</h3>
-      <p>I'm a passionate web developer with a love for creating beautiful and functional websites. I enjoy exploring new technologies and improving my skills.</p>
-      
-      <h3>Contact</h3>
-      <p>Email: john.doe@example.com</p>
-    </div>
-
-    <!-- Social Links -->
-    <div class="social-links">
-      <a href="#" target="_blank" title="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="#" target="_blank" title="GitHub">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="#" target="_blank" title="Twitter">
-        <i class="fab fa-twitter"></i>
-      </a>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <div class="footer">
-    <p>&copy; 2024 John Doe. All Rights Reserved.</p>
-  </div>
-
-  <!-- Font Awesome Icons -->
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 </html>
