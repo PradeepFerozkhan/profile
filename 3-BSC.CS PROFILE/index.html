@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Table</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        * {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+
+        .table-container {
+            width: 100%;
+            overflow-x: auto; /* Horizontal scroll on small screens */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            margin: 20px auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: clamp(0.8em, 2vw, 1.2em); /* Responsive font size */
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        th {
+            background-color: darkblue;
+            color: white;
+            font-size: 1em;
+        }
+
+        td {
+            background-color: lightskyblue;
+            color: black;
+        }
+
+        a {
+            text-decoration: none;
+            color: darkblue;
+            font-weight: 600;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .title{
+            font-family: 'raleway',sans-serif;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        /* Responsive adjustments */
+        @media screen and (max-width: 1024px) {
+            th, td {
+                padding: 10px;
+                font-size: 0.9em;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            th, td {
+                padding: 8px;
+                font-size: 0.8em;
+            }
+
+            .table-container {
+                box-shadow: none;
+                border: 1px solid #ccc;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            th, td {
+                padding: 6px;
+                font-size: 0.7em;
+            }
+        }
+
+        @media screen and (max-width: 320px) {
+            th, td {
+                padding: 4px;
+                font-size: 0.6em;
+            }
+
+            a {
+                font-size: 0.6em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title-con">
+        <h2 class="title">Profiles in Vercel</h2>
+    </div>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>S.NO:</th>
+                    <th>NAMES</th>
+                    <th>REGISTER_NO:</th>
+                    <th>PROFILE_LINKS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Afsal Ahamed. I</td>
+                    <td>E 22 CS 6802</td>
+                    <td><a href="https://afsal-profile.vercel.app">Profile_Afsal</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Aron Thominic Remegius. S</td>
+                    <td>E 22 CS 6804</td>
+                    <td><a href="https://project-aron.vercel.app">Profile_Aron</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Arulselvam. V</td>
+                    <td>E 22 CS 6805</td>
+                    <td><a href="https://arulselvam.vercel.app">Profile_Arulselvam</a></td>
+                </tr>
+                <tr>
+                    <td class="cen">3</td>
+                    <td>Arulselvam. V</td>
+                    <td class="cen">E 22 CS 6805</td>
+                    <td><a href="https://arulselvam.vercel.app">Profile_Arulselvam</a></td>
+                </tr>
+                <tr>
+                    <td class="cen">4</td>
+                    <td>Dhilipan. V</td>
+                    <td class="cen">E 22 CS 6807</td>
+                    <td><a href="https://dhilipan-resume.vercel.app">Profile_Dhilipan</a></td>
+                </tr>
+                <tr>
+                    <td class="cen">5</td>
+                    <td>Gokul. C</td>
+                    <td class="cen">E 22 CS 6808</td>
+                    <td><a href="https://profile-gokul.vercel.app">Profile_Gokul</a></td>
+                </tr>
+                <tr>
+                    <td class="cen">6</td>
+                    <td>Hariharan. D</td>
+                    <td class="cen">E 22 CS 6809</td>
+                    <td><a href="https://profile-hariharan.vercel.app">Profile_Hariharan</a></td>
+                </tr>
+                <tr>
+                    <td class="cen">7</td>
+                    <td>Harish. B</td>
+                    <td class="cen">E 22 CS 6810</td>
+                    <td><a href="https://harish01.vercel.app">Profile_Harish</a></td>
+                </tr>
+                <tr>
+                    <td class="cen">8</td>
+                    <td>Jayakumara Guru. E</td>
+                    <td class="cen">E 22 CS 6813</td>
+                    <td><a href="https://profile-jayakumaraguru.vercel.app">Profile_Jayakumaraguru</a></td>
+                </tr>
+                <tr>
+                    <td class="cen">9</td>
+                    <td>Karthik. A</td>
+                    <td class="cen">E 22 CS 6815</td>
+                    <td><a href="https://profile-livid-zeta.vercel.app">Profile_Karthik</a></td>
+                </tr>
+                <tr>
+                    <td class="cen">10</td>
+                    <td>Kaviyarasan. A</td>
+                    <td class="cen">E 22 CS 6818</td>
+                    <td><a href="https://kavi-livid.vercel.app">Profile_Kaviyarasan</a></td>
+                </tr>
+                <tr>
+                    <td class="cen">11</td>
+                    <td>Krishna. S</td>
+                    <td class="cen">E 22 CS 6819</td>
+                    <td><a href="https://krishna-profile.vercel.app">Profile_Krishna</a></td>
+                </tr>
+                <tr>
+                    <td class="cen">12</td>
+                    <td>Krishnan. S</td>
+                    <td class="cen">E 22 CS 6820</td>
+                    <td><a href="https://profile-krishnan.vercel.app">Profile_krishnan</a></td>
+                </tr>
+                <tr>
+                    <td class="cen">13</td>
+                    <td>Manikandan. K</td>
+                    <td class="cen">E 22 CS 6821</td>
+                    <td><a href="#">-</a></td>
+                </tr>
+                <tr>
+                    <td class="cen">14</td>
+                    <td>Pradeep. R</td>
+                    <td class="cen">E 22 CS 6824</td>
+                    <td><a href="https://pradeep-agih.vercel.app/">Profile_Pradeep</a></td>
+                </tr>
+                <tr>
+                    <td class="cen">15</td>
+                    <td>Pradeep Khan. S</td>
+                    <td class="cen">E 22 CS 6825</td>
+                    <td><a href="https://pradeep-profile.vercel.app">Profile_PradeepKhan</a></td>
+                </tr>
+                <tr>
+                    <td class="cen">16</td>
+                    <td>Pratheep Kumar. S</td>
+                    <td class="cen">E 22 CS 6826</td>
+                    <td><a href="https://profile-pratheepkumar.vercel.app">Profile_PratheepKumar</a></td>
+                </tr>
+                <tr>
+                    <td class="cen">17</td>
+                    <td>Praveen. S</td>
+                    <td class="cen">E 22 CS 6827</td>
+                    <td><a href="https://profile-praveen.vercel.app">Profile_Praveen</a></td>
+                </tr>
+                <tr>
+                    <td class="cen">18</td>
+                    <td>Rasa. M</td>
+                    <td class="cen">E 22 CS 6828</td>
+                    <td><a href="https://profile-rasa.vercel.app">Profile_Rasa</a></td>
+                </tr>
+                <tr>
+                    <td class="cen">19</td>
+                    <td>Risvan. A</td>
+                    <td class="cen">E 22 CS 6829</td>
+                    <td><a href="https://risvan.vercel.app">Profile_Risvan</a></td>
+                </tr>
+                <tr>
+                    <td class="cen">20</td>
+                    <td>Sanjay. S</td>
+                    <td class="cen">E 22 CS 6831</td>
+                    <td><a href="https://sanjay6831.vercel.app">Profile_Sanjay</a></td>
+                </tr>
+                <tr>
+                    <td class="cen">21</td>
+                    <td>Saranraj. S</td>
+                    <td class="cen">E 22 CS 6833</td>
+                    <td><a href="https://saranraj.vercel.app">Profile_Saranraj</a></td>
+                </tr>
+                <tr>
+                    <td class="cen">22</td>
+                    <td>Sathish. P</td>
+                    <td class="cen">E 22 CS 6834</td>
+                    <td><a href="https://profile-sathish.vercel.app">Profile_Sathish</a></td>
+                </tr>
+                <tr>
+                    <td class="cen">23</td>
+                    <td>Sathiyamoorthy. S</td>
+                    <td class="cen">E 22 CS 6835</td>
+                    <td><a href="https://profile-ashen-nine.vercel.app">Profile_Sathiyamoorthy</a></td>
+                </tr>
+                <tr>
+                    <td class="cen">24</td>
+                    <td>Selvamani. M</td>
+                    <td class="cen">E 22 CS 6836</td>
+                    <td><a href="https://selvamani.vercel.app">Profile_Selvamani</a></td>
+                </tr>
+                <tr>
+                    <td class="cen">25</td>
+                    <td>Sheshath. S</td>
+                    <td class="cen">E 22 CS 6837</td>
+                    <td><a href="https://profile-sheshath.vercel.app">Profile_Sheshath</a></td>
+                </tr>
+                <tr>
+                    <td class="cen">26</td>
+                    <td>Sivachandran. M</td>
+                    <td class="cen">E 22 CS 6839</td>
+                    <td><a href="https://profile-sivachandran.vercel.app">Profile_Sivachandran</a></td>
+                </tr>
+                <tr>
+                    <td class="cen">27</td>
+                    <td>Sivaraj. N</td>
+                    <td class="cen">E 22 CS 6840</td>
+                    <td><a href="https://profile-siva.vercel.app">Profile_Sivaraj</a></td>
+                </tr>
+                <tr>
+                    <td class="cen">28</td>
+                    <td>Tamilmaran. A</td>
+                    <td class="cen">E 22 CS 6844</td>
+                    <td><a href="https://profile-tamilmaran.vercel.app">Profile_Tamilmaran</a></td>
+                </tr>
+                <tr>
+                    <td class="cen">29</td>
+                    <td>Thamizhnilavan. S</td>
+                    <td class="cen">E 22 CS 6845</td>
+                    <td><a href="#">-</a></td>
+                </tr>
+                <tr>
+                    <td class="cen">30</td>
+                    <td>Venkatesh. R</td>
+                    <td class="cen">E 22 CS 6848</td>
+                    <td><a href="https://profile-venkatesh-six.vercel.app">Profile_Venkatesh</a></td>
+                </tr>
+                <tr>
+                    <td class="cen">31</td>
+                    <td>Vijay. V</td>
+                    <td class="cen">E 22 CS 6849</td>
+                    <td><a href="https://vijay-profile.vercel.app">Profile_Vijay</a></td>
+                </tr>
+                <tr>
+                    <td class="cen">32</td>
+                    <td>Yogeshwaran. B</td>
+                    <td class="cen">E 22 CS 6850</td>
+                    <td><a href="https://yogeshwaran-profile.vercel.app">Profile_Yogeshwaran</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
